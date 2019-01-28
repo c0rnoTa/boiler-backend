@@ -9,11 +9,11 @@ use XML::Simple;
 
 # Объявляем переменные
 my $period = 60;	# Период опроса датчиков
-my $debug = 0;		# Включение режима отладки
+my $debug = 1;		# Включение режима отладки
 my $emu = 0;		# Эмуляция работы датчиков
 my $w1_slaves_file = '/sys/bus/w1/devices/w1_bus_master1/w1_master_slaves';
 my $database = "/home/pi/database.sqlite";
-my $boiler = "http://192.168.10.10/status.xml";
+my $boiler = "http://192.168.10.82/status.xml";
 my @results;
 my $parser = new XML::Simple;
 
